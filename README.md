@@ -87,9 +87,47 @@ The risk of the Yen is expected to increase given our results from the GARCH mod
 I would not feel confident with these models for training since the p values are above 0.05 and the five day return forecast are very unstable/ fluctuating for a short time frame.
 
 
+# Regression Analysis: Seasonal Effects with Sklearn Linear Regression
 
 
+## Data Preparation
 
+Using the same data from the first section, we add a `Price_Return` column that calculates the price returns and a `Lagged_Return`column.
+
+<img width="346" alt="Screen Shot 2022-05-01 at 3 26 59 PM" src="https://user-images.githubusercontent.com/99091066/166161511-9af7ac9b-f0c9-4716-b239-d5932fa61f38.png">
+
+<img width="429" alt="Screen Shot 2022-05-01 at 3 28 09 PM" src="https://user-images.githubusercontent.com/99091066/166161550-3a6fe03c-9aa7-4c8c-8fc3-2c8b9108083f.png">
+
+## Linear Regression Model
+
+```` python 
+from sklearn.linear_model import LinearRegression
+
+#regress = LinearRegression().fit(x_train, y_train)
+reg= LinearRegression()
+reg.fit(x_train,y_train)
+
+```` 
+
+## Make predictions using the Testing Data
+
+
+<img width="371" alt="Screen Shot 2022-05-01 at 3 30 27 PM" src="https://user-images.githubusercontent.com/99091066/166161623-93bab1c4-7a9d-4754-b3e6-7470408b8369.png">
+
+
+## Out-of-Sample / In-Sample  Performance
+
+Mean Squared Error
+
+`MSE` Testing Data : 0.415484105880405
+`MSE` Training Data : 0.708954961822499
+
+Root Mean Squared Error
+
+`RMSE` Testing Data : 0.6445805658569028
+`RMSE` Training Data : 0.841994632894117
+
+The model performs better with training (in-sample) data as the RMSE is 0.84199 compared to the testing (out-of-sample) data at 0.70895.
 
 
 
