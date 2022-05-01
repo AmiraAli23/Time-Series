@@ -120,11 +120,13 @@ reg.fit(x_train,y_train)
 Mean Squared Error
 
 `MSE` Testing Data : 0.415484105880405
+
 `MSE` Training Data : 0.708954961822499
 
 Root Mean Squared Error
 
 `RMSE` Testing Data : 0.6445805658569028
+
 `RMSE` Training Data : 0.841994632894117
 
 The model performs better with training (in-sample) data as the RMSE is 0.84199 compared to the testing (out-of-sample) data at 0.70895.
