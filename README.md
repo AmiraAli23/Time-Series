@@ -45,7 +45,60 @@ There was a lot of noise around 2008, which alligns with the dip in price around
 
 <img width="434" alt="Screen Shot 2022-05-01 at 2 37 51 PM" src="https://user-images.githubusercontent.com/99091066/166159784-b0df8baf-62c7-45fe-a7d1-0e31166b7185.png">
 
-## Forecasting Returns using an ARMA Model
+## Forecasting Returns using an ARMA (Autoregressive Moving Average) Model
+
+
+<img width="421" alt="Screen Shot 2022-05-01 at 2 45 40 PM" src="https://user-images.githubusercontent.com/99091066/166160021-cf9650b0-1fdf-4d85-b90f-0e994754a19b.png">
+
+<img width="363" alt="Screen Shot 2022-05-01 at 2 58 14 PM" src="https://user-images.githubusercontent.com/99091066/166160454-7a97c6a6-e894-4173-bcd3-315dbf9e9d0d.png">
+
+Given that a p-value < 0.05 indicates a good fit, this model is not a good fit as it exceeds that threshold.
+
+## Forecasting the Exchange Rate Price using an ARIMA Model
+
+<img width="368" alt="Screen Shot 2022-05-01 at 3 03 45 PM" src="https://user-images.githubusercontent.com/99091066/166160627-0f877036-b658-4fda-b0ff-bd70e7d65da9.png">
+
+
+<img width="334" alt="Screen Shot 2022-05-01 at 3 04 31 PM" src="https://user-images.githubusercontent.com/99091066/166160651-2c77468b-0859-4e74-9efc-2c7a580d870a.png">
+
+The ARIMA model predicts a decrease in price for the five day futures.
+
+## Volatility Forecasting with GARCH
+
+<img width="368" alt="Screen Shot 2022-05-01 at 3 07 29 PM" src="https://user-images.githubusercontent.com/99091066/166160754-280ce3ac-d71c-402d-9d75-373d681cbb8c.png">
+
+We create a five day forecast of volatility and plot the figure.
+
+
+<img width="372" alt="Screen Shot 2022-05-01 at 3 09 12 PM" src="https://user-images.githubusercontent.com/99091066/166160827-cd64deaa-46a2-4b2e-aea3-8bc38c83a7de.png">
+
+
+<img width="344" alt="Screen Shot 2022-05-01 at 3 08 51 PM" src="https://user-images.githubusercontent.com/99091066/166160811-a03c41b2-7ce5-49e0-b509-2678c7fa48c6.png">
+
+
+The model predicts a consistent increase in volatility over the next five days, the slope of the curve is around a perfect 1.
+
+## Conclusions for Time Series
+
+Based on our time series analysis, I would not purchase the yen now as the models predict lower prices and higher volatilities. However, the general trend is that the Yen is strengthening against the Canadian dollar. I would not purchase the Yen for short term opportunities and would consider a long term position instead.
+
+The risk of the Yen is expected to increase given our results from the GARCH model.
+
+I would not feel confident with these models for training since the p values are above 0.05 and the five day return forecast are very unstable/ fluctuating for a short time frame.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
